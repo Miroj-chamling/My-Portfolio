@@ -1,0 +1,115 @@
+.home-page{
+    .text-zone{
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+    h1{
+        color: #fff;
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+    }
+    .flat-button{
+        color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #ffd700;
+        margin-top: 25px;
+        margin-right: 20px;
+        float:left;
+        //animation: fadeIn 1s 1.8s ;
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+
+        &:hover{
+            background: #ffd700;
+            color: #333;
+            animation-fill-mode: backwards;
+            &:hover{
+                animation: rubberBand 1.5s;
+            }
+        }
+    }
+    .download-button{
+        color: #080808;
+        background: #ffd700;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #ffd700;
+        margin-top: 25px;
+        float:left;
+        //animation: fadeIn 1s 1.8s ;
+        animation-fill-mode: forwards;
+        white-space: nowrap;
+
+        &:hover{
+            background: #333;
+            color: #fff;
+            animation-fill-mode: backwards;
+            &:hover{
+                animation: rubberBand 1.5s;
+            }
+        }
+    }
+
+    .wrapper{
+        display: flex;
+        .dynamic-txt{
+            //argin-left: 15px;
+            line-height: 70px;
+            height: 70px;
+            overflow: hidden;
+        }
+        .dynamic-txt li{
+            z-index: -1;
+            font-size: 48px;
+            color: #ffd700;
+            list-style: none;
+            font-weight: 500;
+            top: 0;
+            position: relative;
+            animation: slide 12s steps(3) infinite;
+            
+            &::after{
+                left: 0;
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: #080808;
+                border-left: 2px solid #ffd700; 
+                animation: typing 4s steps(10) infinite;   
+            }
+            @keyframes typing {
+                40%,
+                60%{
+                    left: calc(100%);
+                }
+                100%{
+                    left: 0;
+                }
+            }
+        }
+        @keyframes slide {
+            100%{
+                top: -210px;
+            }
+        }
+    }
+}
+
+
+
