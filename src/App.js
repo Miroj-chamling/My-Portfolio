@@ -2,9 +2,9 @@ import "./App.scss";
 import "./components/Layout/index";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/index.js";
-import Home from "./components/home/home";
-import About from "./components/home/About/about";
-import Contact from "./components/contact/contact";
+import Home from "./screen/home_screen/home";
+import About from "./screen/about_screen/about";
+import Contact from "./screen/contact_screen/contact";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 

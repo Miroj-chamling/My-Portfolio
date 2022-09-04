@@ -1,8 +1,8 @@
 import "./contact.scss";
 
 import React, { useEffect, useRef, useState } from "react";
-import Loaderr from "../Loader/loader";
-import AnimatedLetters from "../AnimatedLetters";
+import Loaderr from "../../components/Loader/loader";
+import AnimatedLetters from "../../components/AnimatedLetters";
 import ContactButton from "./contact_button";
 import emailjs from "@emailjs/browser";
 
