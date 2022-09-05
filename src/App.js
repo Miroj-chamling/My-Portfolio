@@ -7,6 +7,7 @@ import About from "./screen/about_screen/about";
 import Contact from "./screen/contact_screen/contact";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Projects from "./screen/projects/project";
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -40,6 +41,7 @@ function App() {
           <Route index element={<Home />} />
           <Route exact path="about" element={<About />}></Route>
           <Route exact path="contact" element={<Contact />}></Route>
+          <Route exact path="projects" element={<Projects />}></Route>
         </Route>
       </Routes>
     </>
