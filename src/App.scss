@@ -1,9 +1,5 @@
 $primary-color: #ffd700;
 
-*{
-  cursor: none;
-}
-
 @import 'animate.css';
 
 @font-face {
@@ -33,7 +29,6 @@ font-family: 'Helvetica Neue';
   border: 1px solid #fff;
   border-radius: 50%;
   position: fixed;
-  background: transparent;
   top: 0;
   left: 0;
 }

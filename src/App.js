@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     const mouseMove = (e) => {
-      console.log(setMousePosition({ x: e.clientX, y: e.clientY }));
+      setMousePosition({ x: e.clientX, y: e.clientY });
     };
     window.addEventListener("mousemove", mouseMove);
     return () => {

@@ -15,9 +15,6 @@ function Navbar() {
         <NavLink exact="true" activeclassname="active" to="/about">
           About
         </NavLink>
-        <NavLink exact="true" activeclassname="active" to="/blogs">
-          Blogs
-        </NavLink>
         <NavLink exact="true" activeclassname="active" to="/projects">
           Projects
         </NavLink>

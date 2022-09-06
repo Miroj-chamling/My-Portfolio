@@ -1,0 +1,46 @@
+.container.project-page{
+    scroll-behavior: smooth;
+    .text-zone {
+        padding-top: 80px;  
+        display: table-cell;
+        max-width: 100%;
+    } 
+    .text-animate-hover {
+        &:hover {
+          color: #fff;
+        }
+      }
+    h1{
+        font-size: 53px;
+        font-family: 'Coolvetica';
+        color: #ffd700;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: 10px;
+    }
+}
+
+.container.project-zone{
+    margin: auto;
+    padding: 12px;
+    .project-container{
+        display: flex;
+        height: 200px;
+        margin-bottom: 20px;
+        .project-img{
+            border-radius: 10px;
+            background: grey;
+            margin: 10px;
+            flex: 1;
+        }
+        .project-overview{
+            margin: 10px;
+            flex: 2;
+            padding: 16px;
+        }
+
+    }
+}
+
+
