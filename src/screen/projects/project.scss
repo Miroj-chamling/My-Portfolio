@@ -21,26 +21,3 @@
     }
 }
 
-.container.project-zone{
-    margin: auto;
-    padding: 12px;
-    .project-container{
-        display: flex;
-        height: 200px;
-        margin-bottom: 20px;
-        .project-img{
-            border-radius: 10px;
-            background: grey;
-            margin: 10px;
-            flex: 1;
-        }
-        .project-overview{
-            margin: 10px;
-            flex: 2;
-            padding: 16px;
-        }
-
-    }
-}
-
-
